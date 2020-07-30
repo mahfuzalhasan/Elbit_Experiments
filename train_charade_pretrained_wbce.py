@@ -361,6 +361,7 @@ def weight_distribution(train_dataset):
     neg_weights = torch.from_numpy(neg_weights)
     return pos_weights, neg_weights
 
+
 def train_locator( run_id, use_cuda ):
     torch.backends.cudnn.enabled=False
     writer = SummaryWriter(os.path.join(cfg.tf_logs_dir, str(run_id)))
@@ -438,42 +439,27 @@ def train_locator( run_id, use_cuda ):
     learning_rate_list = list(np.linspace(1e-3, 1e-5, num=20))
 
     for epoch in range(params.num_epochs):
-
-
         train_dataset = MEVADataGenerator('train', params.train_percent, params.train_scales, use_localization_alone = False, use_groundtruth_alone = False)
         print("Number of training samples : " + str(len(train_dataset)),flush=True)
         #print('train distribution: ',train_dataset.class_statistics,flush=True)
         print('train ratio: ',train_dataset.ratio[0])
         train_dataloader = DataLoader(train_dataset, batch_size = batch_size_local, shuffle=True, collate_fn=filter_none, num_workers=params.num_workers)
         print('train dataloader: ',len(train_dataloader),flush=True)        
-        
         pos_weights, neg_weights = weight_distribution(train_dataset)
-        
         print('pos weights: ',pos_weights)
         print('neg weights: ',neg_weights)
-        
         criterion_classification = WeightedTwoPartBCELoss(use_cuda, pos_weights, neg_weights)
-        
         model = train(run_id, epoch, train_dataloader, model, optimizer, criterion, criterion_classification, writer, use_cuda, lr_scheduler=None , lr_list = None)
-
-                
         validation_dataset = MEVADataGenerator('validation',params.validation_percent, params.validation_scales, use_localization_alone=False, use_groundtruth_alone=False)
         print("Number of validation samples : " + str(len(validation_dataset)),flush=True)
         #print('val distribution: ',validation_dataset.class_statistics,flush=True)
         print('validation ratio: ',validation_dataset.ratio[0])
-
-
         validation_dataloader = DataLoader(validation_dataset, batch_size=batch_size_local, shuffle=True, collate_fn=filter_none, num_workers=params.num_workers)
         print('valid dataloader: ',len(validation_dataloader),flush=True)
         pos_weights, neg_weights = weight_distribution(validation_dataset)
-        
         print('pos weights: ',pos_weights)
         print('neg weights: ',neg_weights)
-        
         criterion_classification = WeightedTwoPartBCELoss(use_cuda, pos_weights, neg_weights)
-        
-
-
         validation(run_id, epoch, validation_dataloader, model, criterion, criterion_classification, writer, use_cuda, lr_scheduler=None)
 
         

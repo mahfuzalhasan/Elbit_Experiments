@@ -1,4 +1,4 @@
-cache_folder = '/home/c3-0/mahfuz/Elbit_curriculum_learning/cache/videos_72_gray'
+cache_folder = '/home/c3-0/mahfuz/Elbit_curriculum_learning/cache/videos_72'
 #cache_folder = '/home/c3-0/mahfuz/Elbit_curriculum_learning/cache/videos_72_color'
 cache_folder_tail_class = '/home/c3-0/mahfuz/Elbit_curriculum_learning/cache/videos_72_tail'
 frame_per_second = 12
