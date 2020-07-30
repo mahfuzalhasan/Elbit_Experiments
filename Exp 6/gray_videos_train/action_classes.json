@@ -1,0 +1,11 @@
+{
+  "_comments": "These are the classes of actions from the MEVA dataset",
+  "classes": {
+    "walking":0,
+    "standing":1,
+    "long_arm":2,
+    "waving":3,
+    "digging":4,
+	"hard_negative":5
+  }
+}
