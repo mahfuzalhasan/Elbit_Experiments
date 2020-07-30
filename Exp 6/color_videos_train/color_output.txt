@@ -1,0 +1,512 @@
+USE_CUDA:  True
+Run ID : 06-29-20_1546 
+Parameters used : 
+batch_size from file: 6
+lr: 0.0001
+model loaded from: /home/c3-0/praveen/VIRAT/trained_models/i3d_model_rgb_charades.pt 
+Let's use 2 GPUs! 
+Using ADAM optimizer
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 382, 1: 349, 2: 353, 3: 249, 4: 40}
+Number of training samples : 1319
+train ratio:  0.2793774113570483
+train dataloader:  330
+distribution:  {0: 382, 1: 349, 2: 353, 3: 249, 4: 40}
+total_data:  1279
+pos weights:  tensor([0.2123, 0.2323, 0.2297, 0.3257, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2629, 0.2535, 0.2546, 0.2289, 0.1000], dtype=torch.float64)
+lr:  0.0001
+Training Epoch 0, Batch 0::: Total Loss:0.7686703205108643 
+Training Epoch 0, Batch 40::: Total Loss:0.6324241982727516 
+Training Epoch 0, Batch 80::: Total Loss:0.5704105157911041 
+Training Epoch 0, Batch 120::: Total Loss:0.5285784341087026 
+Training Epoch 0, Batch 160::: Total Loss:0.4990546558954701 
+Training Epoch 0, Batch 200::: Total Loss:0.4791957084367524 
+Training Epoch 0, Batch 240::: Total Loss:0.4711758944503499 
+Training Epoch 0, Batch 280::: Total Loss:0.4577957945892395 
+Training Epoch 0, Batch 320::: Total Loss:0.4482823347098359 
+Training Epoch 0::: Loss: 0.44665430635213854
+long_arm : 209
+digging : 38
+standing : 58
+waving : 9
+walking : 91
+405
+self statistics:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+Number of validation samples : 405
+validation ratio:  0.6975740858992793
+distribution:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+total_data:  389
+pos weights:  tensor([0.0501, 0.1153, 0.0277, 0.8069, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2154, 0.1539, 0.5011, 0.1296, 0.1000], dtype=torch.float64)
+valid dataloader:  405
+validation at epoch 0
+Validation Epoch 0, Batch 0::: Total Loss:5.951309680938721
+Validation Epoch 0, Batch 40::: Total Loss:6.290625514053717
+Validation Epoch 0, Batch 80::: Total Loss:6.29577139571861
+Validation Epoch 0, Batch 120::: Total Loss:6.3248498705793015
+Validation Epoch 0, Batch 160::: Total Loss:5.983628098268687
+Validation Epoch 0, Batch 200::: Total Loss:5.843526186041571
+Validation Epoch 0, Batch 240::: Total Loss:5.983085640238529
+Validation Epoch 0, Batch 280::: Total Loss:6.087997772515457
+Validation Epoch 0, Batch 320::: Total Loss:6.038399981561108
+Validation Epoch 0, Batch 360::: Total Loss:6.013239440825507
+Validation Epoch 0, Batch 400::: Total Loss:6.042447068150204
+Validation Epoch: 0, support: [161  70 307  10   0]
+th 0.1
+Validation Epoch: 0, F1-Score: [0.59183673 0.62222222 0.9589491  0.12903226 0.        ]
+Validation Epoch: 0, Cls Precision: [0.44072948 0.4516129  0.96688742 0.06896552 0.        ]
+Validation Epoch: 0, Recall: [0.90062112 1.         0.95114007 1.         0.        ]
+th 0.2
+Validation Epoch: 0, F1-Score: [0.53828306 0.65968586 0.95578231 0.1754386  0.        ]
+Validation Epoch: 0, Cls Precision: [0.42962963 0.52066116 1.         0.09615385 0.        ]
+Validation Epoch: 0, Recall: [0.72049689 0.9        0.91530945 1.         0.        ]
+th 0.3
+Validation Epoch: 0, F1-Score: [0.50397878 0.67058824 0.94320138 0.20408163 0.        ]
+Validation Epoch: 0, Cls Precision: [0.43981481 0.57       1.         0.11363636 0.        ]
+Validation Epoch: 0, Recall: [0.59006211 0.81428571 0.89250814 1.         0.        ]
+Validation Epoch 0::: Loss: 6.013125662744781, F1_0.1:0.4604080623721495, F1_0.2:0.46583796718715104, F1_0.3:0.4643700049448688, class precision_0.2:0.40928892656165383, Recall_0.2:0.7071612681328019, Time: 1059.760158777237
+GT: [382. 349. 353. 249.  40.]
+Pred: [352.35925 334.64783 384.00653 360.9002  157.18652]
+Dpos: [0.84985729 0.77802952 0.7902625  0.42023103 0.99999762]
+Dneg: [0.21359003 0.16655771 0.19155608 0.17761884 0.04356254]
+cur_ratio:  [0.27945332 0.27938404 0.27934838 0.27835541 0.28034948]
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 382, 1: 346, 2: 354, 3: 243, 4: 46}
+Number of training samples : 1319
+train ratio:  0.27945332488571994
+train dataloader:  330
+distribution:  {0: 382, 1: 346, 2: 354, 3: 243, 4: 46}
+total_data:  1273
+pos weights:  tensor([0.2103, 0.2322, 0.2269, 0.3306, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2635, 0.2532, 0.2554, 0.2279, 0.1000], dtype=torch.float64)
+lr:  0.0001
+/home/mahfuz/.conda/envs/detectron2/lib/python3.6/site-packages/sklearn/metrics/_classification.py:1221: UndefinedMetricWarning: Recall and F-score are ill-defined and being set to 0.0 in labels with no true samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Training Epoch 1, Batch 0::: Total Loss:0.5626691579818726 
+Training Epoch 1, Batch 40::: Total Loss:0.3292724148529332 
+Training Epoch 1, Batch 80::: Total Loss:0.3346020735708284 
+Training Epoch 1, Batch 120::: Total Loss:0.3265254256153895 
+Training Epoch 1, Batch 160::: Total Loss:0.32052866938691704 
+Training Epoch 1, Batch 200::: Total Loss:0.32546295848355367 
+Training Epoch 1, Batch 240::: Total Loss:0.31868402152882574 
+Training Epoch 1, Batch 280::: Total Loss:0.31229096910919585 
+Training Epoch 1, Batch 320::: Total Loss:0.3085178199261891 
+Training Epoch 1::: Loss: 0.30771153966585796
+long_arm : 209
+digging : 38
+standing : 58
+waving : 9
+walking : 91
+405
+self statistics:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+Number of validation samples : 405
+validation ratio:  0.6975740858992793
+distribution:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+total_data:  389
+pos weights:  tensor([0.0501, 0.1153, 0.0277, 0.8069, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2154, 0.1539, 0.5011, 0.1296, 0.1000], dtype=torch.float64)
+valid dataloader:  405
+validation at epoch 1
+Validation Epoch 1, Batch 0::: Total Loss:1.3847869634628296
+Validation Epoch 1, Batch 40::: Total Loss:4.771847742359813
+Validation Epoch 1, Batch 80::: Total Loss:4.730752131085337
+Validation Epoch 1, Batch 120::: Total Loss:4.888447012783082
+Validation Epoch 1, Batch 160::: Total Loss:5.032828782656178
+Validation Epoch 1, Batch 200::: Total Loss:5.165822881371228
+Validation Epoch 1, Batch 240::: Total Loss:5.233092949103518
+Validation Epoch 1, Batch 280::: Total Loss:5.257461086286769
+Validation Epoch 1, Batch 320::: Total Loss:5.261641813958545
+Validation Epoch 1, Batch 360::: Total Loss:5.284152407395212
+Validation Epoch 1, Batch 400::: Total Loss:5.399286443753136
+Validation Epoch: 1, support: [161  70 307  10   0]
+th 0.1
+Validation Epoch: 1, F1-Score: [0.6        0.74193548 0.94375    0.15748031 0.        ]
+Validation Epoch: 1, Cls Precision: [0.45631068 0.59482759 0.90690691 0.08547009 0.        ]
+Validation Epoch: 1, Recall: [0.8757764  0.98571429 0.98371336 1.         0.        ]
+th 0.2
+Validation Epoch: 1, F1-Score: [0.53521127 0.70748299 0.94003241 0.18018018 0.        ]
+Validation Epoch: 1, Cls Precision: [0.43018868 0.67532468 0.93548387 0.0990099  0.        ]
+Validation Epoch: 1, Recall: [0.70807453 0.74285714 0.94462541 1.         0.        ]
+th 0.3
+Validation Epoch: 1, F1-Score: [0.51794872 0.62121212 0.93574959 0.2        0.        ]
+Validation Epoch: 1, Cls Precision: [0.44104803 0.66129032 0.94666667 0.11111111 0.        ]
+Validation Epoch: 1, Recall: [0.62732919 0.58571429 0.92508143 1.         0.        ]
+Validation Epoch 1::: Loss: 5.394842165487784, F1_0.1:0.48863315976631955, F1_0.2:0.4725813711787904, F1_0.3:0.4549820854598449, class precision_0.2:0.4280014253055599, Recall_0.2:0.6791114168369514, Time: 1055.5776965618134
+GT: [382. 346. 354. 243.  46.]
+Pred: [325.74463  292.00995  347.60333  284.47302  127.102554]
+Dpos: [0.66474481 0.45434638 0.44517942 0.22433172 0.92410715]
+Dneg: [0.09786637 0.05840853 0.07374375 0.04660708 0.03380249]
+cur_ratio:  [0.27969494 0.27914801 0.279044   0.27751401 0.28150084]
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 385, 1: 348, 2: 353, 3: 243, 4: 46}
+Number of training samples : 1319
+train ratio:  0.27969493894760245
+train dataloader:  330
+distribution:  {0: 385, 1: 348, 2: 353, 3: 243, 4: 46}
+total_data:  1273
+pos weights:  tensor([0.2091, 0.2314, 0.2281, 0.3314, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2640, 0.2535, 0.2549, 0.2276, 0.1000], dtype=torch.float64)
+lr:  0.0001
+Training Epoch 2, Batch 0::: Total Loss:0.2843797206878662 
+Training Epoch 2, Batch 40::: Total Loss:0.2845510800437229 
+Training Epoch 2, Batch 80::: Total Loss:0.26296680025112484 
+Training Epoch 2, Batch 120::: Total Loss:0.2609141004725921 
+Training Epoch 2, Batch 160::: Total Loss:0.26791685296696904 
+Training Epoch 2, Batch 200::: Total Loss:0.2603395308428143 
+Training Epoch 2, Batch 240::: Total Loss:0.25193847916803913 
+Training Epoch 2, Batch 280::: Total Loss:0.24877078306208303 
+Training Epoch 2, Batch 320::: Total Loss:0.24617337159278607 
+Training Epoch 2::: Loss: 0.24780729871356125
+long_arm : 209
+digging : 38
+standing : 58
+waving : 9
+walking : 91
+405
+self statistics:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+Number of validation samples : 405
+validation ratio:  0.6975740858992793
+distribution:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+total_data:  389
+pos weights:  tensor([0.0501, 0.1153, 0.0277, 0.8069, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2154, 0.1539, 0.5011, 0.1296, 0.1000], dtype=torch.float64)
+valid dataloader:  405
+validation at epoch 2
+Validation Epoch 2, Batch 0::: Total Loss:26.54867172241211
+Validation Epoch 2, Batch 40::: Total Loss:5.149725222006077
+Validation Epoch 2, Batch 80::: Total Loss:3.930872466829088
+Validation Epoch 2, Batch 120::: Total Loss:3.7829125863461455
+Validation Epoch 2, Batch 160::: Total Loss:3.9249075858489326
+Validation Epoch 2, Batch 200::: Total Loss:3.5777814631438374
+Validation Epoch 2, Batch 240::: Total Loss:3.6954063280984077
+Validation Epoch 2, Batch 280::: Total Loss:3.62448350475352
+Validation Epoch 2, Batch 320::: Total Loss:3.535364640093295
+Validation Epoch 2, Batch 360::: Total Loss:3.582572147126343
+Validation Epoch 2, Batch 400::: Total Loss:3.615125419493031
+Validation Epoch: 2, support: [161  70 307  10   0]
+th 0.1
+Validation Epoch: 2, F1-Score: [0.50955414 0.64814815 0.97029703 0.12727273 0.        ]
+Validation Epoch: 2, Cls Precision: [0.52287582 0.47945205 0.98327759 0.07       0.        ]
+Validation Epoch: 2, Recall: [0.49689441 1.         0.95765472 0.7        0.        ]
+th 0.2
+Validation Epoch: 2, F1-Score: [0.47014925 0.67317073 0.97152429 0.2        0.        ]
+Validation Epoch: 2, Cls Precision: [0.58878505 0.51111111 1.         0.11666667 0.        ]
+Validation Epoch: 2, Recall: [0.39130435 0.98571429 0.94462541 0.7        0.        ]
+th 0.3
+Validation Epoch: 2, F1-Score: [0.42677824 0.6969697  0.96632997 0.23076923 0.        ]
+Validation Epoch: 2, Cls Precision: [0.65384615 0.5390625  1.         0.14285714 0.        ]
+Validation Epoch: 2, Recall: [0.31677019 0.98571429 0.93485342 0.6        0.        ]
+Validation Epoch 2::: Loss: 3.589923194602684, F1_0.1:0.4510544090502469, F1_0.2:0.46296885470917265, F1_0.3:0.4641694273493437, class precision_0.2:0.44331256490134996, Recall_0.2:0.6043288081412992, Time: 1057.4637432098389
+GT: [385. 348. 353. 243.  46.]
+Pred: [345.43976 286.17688 346.5519  270.21988 114.82194]
+Dpos: [0.46523525 0.36341223 0.29684292 0.14614634 0.78142099]
+Dneg: [0.07334894 0.03160407 0.04877882 0.01740782 0.03051071]
+cur_ratio:  [0.27975537 0.27904063 0.27870317 0.2768445  0.28257436]
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 387, 1: 346, 2: 352, 3: 247, 4: 42}
+Number of training samples : 1319
+train ratio:  0.2797553730986181
+train dataloader:  330
+distribution:  {0: 387, 1: 346, 2: 352, 3: 247, 4: 42}
+total_data:  1277
+pos weights:  tensor([0.2090, 0.2338, 0.2298, 0.3275, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2644, 0.2528, 0.2544, 0.2285, 0.1000], dtype=torch.float64)
+lr:  0.0001
+Training Epoch 3, Batch 0::: Total Loss:0.33892932534217834 
+Training Epoch 3, Batch 40::: Total Loss:0.22646761540232635 
+Training Epoch 3, Batch 80::: Total Loss:0.22262400204752697 
+Training Epoch 3, Batch 120::: Total Loss:0.21382394180563855 
+Training Epoch 3, Batch 160::: Total Loss:0.20730513496243436 
+Training Epoch 3, Batch 200::: Total Loss:0.2074975001055803 
+Training Epoch 3, Batch 240::: Total Loss:0.2039016472229819 
+Training Epoch 3, Batch 280::: Total Loss:0.19661109213090877 
+Training Epoch 3, Batch 320::: Total Loss:0.19349471888159667 
+Training Epoch 3::: Loss: 0.19444222443483092
+long_arm : 209
+digging : 38
+standing : 58
+waving : 9
+walking : 91
+405
+self statistics:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+Number of validation samples : 405
+validation ratio:  0.6975740858992793
+distribution:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+total_data:  389
+pos weights:  tensor([0.0501, 0.1153, 0.0277, 0.8069, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2154, 0.1539, 0.5011, 0.1296, 0.1000], dtype=torch.float64)
+valid dataloader:  405
+validation at epoch 3
+Validation Epoch 3, Batch 0::: Total Loss:10.59691047668457
+Validation Epoch 3, Batch 40::: Total Loss:4.353732120699998
+Validation Epoch 3, Batch 80::: Total Loss:4.281247050673874
+Validation Epoch 3, Batch 120::: Total Loss:4.842968158485475
+Validation Epoch 3, Batch 160::: Total Loss:4.721487962681314
+Validation Epoch 3, Batch 200::: Total Loss:4.817426116312321
+Validation Epoch 3, Batch 240::: Total Loss:4.9691608590209135
+Validation Epoch 3, Batch 280::: Total Loss:4.973649010115246
+Validation Epoch 3, Batch 320::: Total Loss:4.948699553436208
+Validation Epoch 3, Batch 360::: Total Loss:4.892080904374162
+Validation Epoch 3, Batch 400::: Total Loss:4.999364293424269
+Validation Epoch: 3, support: [161  70 307  10   0]
+th 0.1
+Validation Epoch: 3, F1-Score: [0.55847255 0.69651741 0.94888179 0.14705882 0.        ]
+Validation Epoch: 3, Cls Precision: [0.45348837 0.53435115 0.93103448 0.07936508 0.        ]
+Validation Epoch: 3, Recall: [0.72670807 1.         0.96742671 1.         0.        ]
+th 0.2
+Validation Epoch: 3, F1-Score: [0.50415512 0.75977654 0.93939394 0.14035088 0.        ]
+Validation Epoch: 3, Cls Precision: [0.455      0.62385321 0.97212544 0.07692308 0.        ]
+Validation Epoch: 3, Recall: [0.56521739 0.97142857 0.90879479 0.8        0.        ]
+th 0.3
+Validation Epoch: 3, F1-Score: [0.5        0.72727273 0.92387543 0.14583333 0.        ]
+Validation Epoch: 3, Cls Precision: [0.47486034 0.63157895 0.98523985 0.08139535 0.        ]
+Validation Epoch: 3, Recall: [0.52795031 0.85714286 0.86970684 0.7        0.        ]
+Validation Epoch 3::: Loss: 4.9938331032976695, F1_0.1:0.47018611586027986, F1_0.2:0.46873529551070214, F1_0.3:0.45939629862640247, class precision_0.2:0.42558034469446426, Recall_0.2:0.649088150201307, Time: 1055.7825603485107
+GT: [387. 346. 352. 247.  42.]
+Pred: [338.56268 292.14478 340.90686 270.64215 110.67937]
+Dpos: [0.37018272 0.27996941 0.22291986 0.07474818 0.43578201]
+Dneg: [0.04947178 0.02351668 0.024736   0.01033567 0.02714767]
+cur_ratio:  [0.27995416 0.27905954 0.27855969 0.27633208 0.28302388]
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 383, 1: 349, 2: 352, 3: 240, 4: 49}
+Number of training samples : 1319
+train ratio:  0.2799541597114359
+train dataloader:  330
+distribution:  {0: 383, 1: 349, 2: 352, 3: 240, 4: 49}
+total_data:  1270
+pos weights:  tensor([0.2091, 0.2295, 0.2276, 0.3338, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2638, 0.2541, 0.2549, 0.2272, 0.1000], dtype=torch.float64)
+lr:  0.0001
+Training Epoch 4, Batch 0::: Total Loss:0.08868445456027985 
+Training Epoch 4, Batch 40::: Total Loss:0.18370373937778356 
+Training Epoch 4, Batch 80::: Total Loss:0.19226980798038434 
+Training Epoch 4, Batch 120::: Total Loss:0.17126987474270103 
+Training Epoch 4, Batch 160::: Total Loss:0.16899823800007008 
+Training Epoch 4, Batch 200::: Total Loss:0.16736222425503516 
+Training Epoch 4, Batch 240::: Total Loss:0.17068049939217902 
+Training Epoch 4, Batch 280::: Total Loss:0.17454754821028148 
+Training Epoch 4, Batch 320::: Total Loss:0.17089756971625525 
+Training Epoch 4::: Loss: 0.1692133770296068
+long_arm : 209
+digging : 38
+standing : 58
+waving : 9
+walking : 91
+405
+self statistics:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+Number of validation samples : 405
+validation ratio:  0.6975740858992793
+distribution:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+total_data:  389
+pos weights:  tensor([0.0501, 0.1153, 0.0277, 0.8069, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2154, 0.1539, 0.5011, 0.1296, 0.1000], dtype=torch.float64)
+valid dataloader:  405
+validation at epoch 4
+Validation Epoch 4, Batch 0::: Total Loss:13.845903396606445
+Validation Epoch 4, Batch 40::: Total Loss:5.150936013314782
+Validation Epoch 4, Batch 80::: Total Loss:5.127595613032211
+Validation Epoch 4, Batch 120::: Total Loss:4.742147022042393
+Validation Epoch 4, Batch 160::: Total Loss:4.617130062594917
+Validation Epoch 4, Batch 200::: Total Loss:4.7681118392232635
+Validation Epoch 4, Batch 240::: Total Loss:4.771354450724432
+Validation Epoch 4, Batch 280::: Total Loss:4.514546522042081
+Validation Epoch 4, Batch 320::: Total Loss:4.473413960584599
+Validation Epoch 4, Batch 360::: Total Loss:4.859148641702541
+Validation Epoch 4, Batch 400::: Total Loss:4.723845885578831
+Validation Epoch: 4, support: [161  70 307  10   0]
+th 0.1
+Validation Epoch: 4, F1-Score: [0.35947712 0.68316832 0.94607088 0.12371134 0.        ]
+Validation Epoch: 4, Cls Precision: [0.37931034 0.52272727 0.89766082 0.06896552 0.        ]
+Validation Epoch: 4, Recall: [0.34161491 0.98571429 1.         0.6        0.        ]
+th 0.2
+Validation Epoch: 4, F1-Score: [0.31343284 0.73446328 0.97763578 0.05333333 0.        ]
+Validation Epoch: 4, Cls Precision: [0.39252336 0.60747664 0.95924765 0.03076923 0.        ]
+Validation Epoch: 4, Recall: [0.26086957 0.92857143 0.99674267 0.2        0.        ]
+th 0.3
+Validation Epoch: 4, F1-Score: [0.23673469 0.74698795 0.97592295 0.         0.        ]
+Validation Epoch: 4, Cls Precision: [0.3452381  0.64583333 0.96202532 0.         0.        ]
+Validation Epoch: 4, Recall: [0.18012422 0.88571429 0.99022801 0.         0.        ]
+Validation Epoch 4::: Loss: 4.726072625171991, F1_0.1:0.42248553189902865, F1_0.2:0.41577304574759816, F1_0.3:0.39192911982716466, class precision_0.2:0.3980033759344104, Recall_0.2:0.4772367329597184, Time: 1051.683866262436
+GT: [383. 349. 352. 240.  49.]
+Pred: [338.93436 296.82755 345.61685 258.19955 121.55724]
+Dpos: [0.29190758 0.25370048 0.19969178 0.10559558 0.22784198]
+Dneg: [0.03674646 0.02146064 0.02313023 0.00698367 0.03388421]
+cur_ratio:  [0.28013298 0.27917379 0.27851861 0.27607605 0.28303139]
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 383, 1: 346, 2: 351, 3: 243, 4: 46}
+Number of training samples : 1319
+train ratio:  0.2801329806460922
+train dataloader:  330
+distribution:  {0: 383, 1: 346, 2: 351, 3: 243, 4: 46}
+total_data:  1273
+pos weights:  tensor([0.2095, 0.2319, 0.2286, 0.3301, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2639, 0.2534, 0.2547, 0.2280, 0.1000], dtype=torch.float64)
+lr:  0.0001
+Training Epoch 5, Batch 0::: Total Loss:0.10055259615182877 
+Training Epoch 5, Batch 40::: Total Loss:0.16698744238876714 
+Training Epoch 5, Batch 80::: Total Loss:0.15158134717264293 
+Training Epoch 5, Batch 120::: Total Loss:0.16393540445561253 
+Training Epoch 5, Batch 160::: Total Loss:0.1514094785457442 
+Training Epoch 5, Batch 200::: Total Loss:0.1491194143149983 
+Training Epoch 5, Batch 240::: Total Loss:0.15302769913960296 
+Training Epoch 5, Batch 280::: Total Loss:0.14972722043823516 
+Training Epoch 5, Batch 320::: Total Loss:0.15129256937826904 
+Training Epoch 5::: Loss: 0.15140770396048372
+long_arm : 209
+digging : 38
+standing : 58
+waving : 9
+walking : 91
+405
+self statistics:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+Number of validation samples : 405
+validation ratio:  0.6975740858992793
+distribution:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+total_data:  389
+pos weights:  tensor([0.0501, 0.1153, 0.0277, 0.8069, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2154, 0.1539, 0.5011, 0.1296, 0.1000], dtype=torch.float64)
+valid dataloader:  405
+validation at epoch 5
+Validation Epoch 5, Batch 0::: Total Loss:2.7631022930145264
+Validation Epoch 5, Batch 40::: Total Loss:4.550392354406962
+Validation Epoch 5, Batch 80::: Total Loss:4.399529561584378
+Validation Epoch 5, Batch 120::: Total Loss:4.3300296767684054
+Validation Epoch 5, Batch 160::: Total Loss:4.485807180404663
+Validation Epoch 5, Batch 200::: Total Loss:4.5588989589937885
+Validation Epoch 5, Batch 240::: Total Loss:4.469341591680693
+Validation Epoch 5, Batch 280::: Total Loss:4.726870631408013
+Validation Epoch 5, Batch 320::: Total Loss:4.753199738876842
+Validation Epoch 5, Batch 360::: Total Loss:4.638426867548448
+Validation Epoch 5, Batch 400::: Total Loss:4.7714329523933205
+Validation Epoch: 5, support: [161  70 307  10   0]
+th 0.1
+Validation Epoch: 5, F1-Score: [0.49509804 0.74418605 0.9569378  0.16393443 0.        ]
+Validation Epoch: 5, Cls Precision: [0.40890688 0.62745098 0.9375     0.08928571 0.        ]
+Validation Epoch: 5, Recall: [0.62732919 0.91428571 0.9771987  1.         0.        ]
+th 0.2
+Validation Epoch: 5, F1-Score: [0.44318182 0.7826087  0.96859504 0.19047619 0.        ]
+Validation Epoch: 5, Cls Precision: [0.40837696 0.79411765 0.98322148 0.10526316 0.        ]
+Validation Epoch: 5, Recall: [0.48447205 0.77142857 0.95439739 1.         0.        ]
+th 0.3
+Validation Epoch: 5, F1-Score: [0.34527687 0.75       0.96134454 0.19354839 0.        ]
+Validation Epoch: 5, Cls Precision: [0.3630137  0.82758621 0.99305556 0.10843373 0.        ]
+Validation Epoch: 5, Recall: [0.32919255 0.68571429 0.93159609 0.9        0.        ]
+Validation Epoch 5::: Loss: 4.757116099345831, F1_0.1:0.472031262199977, F1_0.2:0.4769723491264994, F1_0.3:0.45003395957521397, class precision_0.2:0.45819584896288257, Recall_0.2:0.6420596030509641, Time: 1113.0476524829865
+GT: [383. 346. 351. 243.  46.]
+Pred: [340.04248 290.5911  342.9993  258.1753  119.9481 ]
+Dpos: [0.29190759 0.2438521  0.1833809  0.07604914 0.13131118]
+Dneg: [0.03281434 0.01453751 0.02044078 0.00653397 0.03092134]
+cur_ratio:  [0.28039879 0.27935549 0.27851496 0.27581463 0.2828507 ]
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 378, 1: 343, 2: 358, 3: 242, 4: 47}
+Number of training samples : 1319
+train ratio:  0.2803987922311751
+train dataloader:  330
+distribution:  {0: 378, 1: 343, 2: 358, 3: 242, 4: 47}
+total_data:  1272
+pos weights:  tensor([0.2119, 0.2335, 0.2237, 0.3309, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2626, 0.2527, 0.2568, 0.2279, 0.1000], dtype=torch.float64)
+lr:  0.0001
+Training Epoch 6, Batch 0::: Total Loss:0.0663340836763382 
+Training Epoch 6, Batch 40::: Total Loss:0.13343220631160388 
+Training Epoch 6, Batch 80::: Total Loss:0.1323470271847866 
+Training Epoch 6, Batch 120::: Total Loss:0.12792009737127083 
+Training Epoch 6, Batch 160::: Total Loss:0.12160406740648406 
+Training Epoch 6, Batch 200::: Total Loss:0.12186464646006402 
+Training Epoch 6, Batch 240::: Total Loss:0.12126633128406349 
+Training Epoch 6, Batch 280::: Total Loss:0.11814335718406264 
+Training Epoch 6, Batch 320::: Total Loss:0.11732366382263346 
+Training Epoch 6::: Loss: 0.11897716141221198
+long_arm : 209
+digging : 38
+standing : 58
+waving : 9
+walking : 91
+405
+self statistics:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+Number of validation samples : 405
+validation ratio:  0.6975740858992793
+distribution:  {0: 161, 1: 70, 2: 291, 3: 10, 4: 16}
+total_data:  389
+pos weights:  tensor([0.0501, 0.1153, 0.0277, 0.8069, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2154, 0.1539, 0.5011, 0.1296, 0.1000], dtype=torch.float64)
+valid dataloader:  405
+validation at epoch 6
+Validation Epoch 6, Batch 0::: Total Loss:5.951309680938721
+Validation Epoch 6, Batch 40::: Total Loss:4.892400785190303
+Validation Epoch 6, Batch 80::: Total Loss:4.520422385062701
+Validation Epoch 6, Batch 120::: Total Loss:4.580332000393513
+Validation Epoch 6, Batch 160::: Total Loss:5.073028012092069
+Validation Epoch 6, Batch 200::: Total Loss:4.795865233857834
+Validation Epoch 6, Batch 240::: Total Loss:4.778692826195871
+Validation Epoch 6, Batch 280::: Total Loss:4.671053713751009
+Validation Epoch 6, Batch 320::: Total Loss:4.601184333596274
+Validation Epoch 6, Batch 360::: Total Loss:4.611827484458437
+Validation Epoch 6, Batch 400::: Total Loss:4.758319163560273
+Validation Epoch: 6, support: [161  70 307  10   0]
+th 0.1
+Validation Epoch: 6, F1-Score: [0.24913495 0.6969697  0.93206951 0.18018018 0.        ]
+Validation Epoch: 6, Cls Precision: [0.28125    0.5390625  0.90490798 0.0990099  0.        ]
+Validation Epoch: 6, Recall: [0.22360248 0.98571429 0.96091205 1.         0.        ]
+th 0.2
+Validation Epoch: 6, F1-Score: [0.23574144 0.7607362  0.95695364 0.20618557 0.        ]
+Validation Epoch: 6, Cls Precision: [0.30392157 0.66666667 0.97306397 0.11494253 0.        ]
+Validation Epoch: 6, Recall: [0.19254658 0.88571429 0.94136808 1.         0.        ]
+th 0.3
+Validation Epoch: 6, F1-Score: [0.21343874 0.76       0.95769882 0.15909091 0.        ]
+Validation Epoch: 6, Cls Precision: [0.29347826 0.7125     0.99647887 0.08974359 0.        ]
+Validation Epoch: 6, Recall: [0.16770186 0.81428571 0.9218241  0.7        0.        ]
+Validation Epoch 6::: Loss: 4.73042111808871, F1_0.1:0.41167086710306505, F1_0.2:0.4319233701160708, F1_0.3:0.41804569196712216, class precision_0.2:0.41171894741874454, Recall_0.2:0.6039257895482226, Time: 1140.3699717521667
+GT: [378. 343. 358. 242.  47.]
+Pred: [347.04065 284.55154 346.10883 254.72664 117.99312]
+Dpos: [0.22678695 0.2137379  0.14564876 0.04922883 0.16783135]
+Dneg: [0.02653562 0.00772501 0.01472097 0.0013935  0.03094624]
+cur_ratio:  [0.28055549 0.27952771 0.27847749 0.27554847 0.28282949]
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 387, 1: 346, 2: 353, 3: 257, 4: 32}
+Number of training samples : 1319
+train ratio:  0.28055549154490395
+train dataloader:  330
+distribution:  {0: 387, 1: 346, 2: 353, 3: 257, 4: 32}
+total_data:  1287
+pos weights:  tensor([0.2118, 0.2369, 0.2322, 0.3190, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2636, 0.2521, 0.2540, 0.2303, 0.1000], dtype=torch.float64)
+lr:  0.0001
+Training Epoch 7, Batch 0::: Total Loss:0.11215649545192719 
+Training Epoch 7, Batch 40::: Total Loss:0.10206582937843917 
+Training Epoch 7, Batch 80::: Total Loss:0.09900400513944066 
+Training Epoch 7, Batch 120::: Total Loss:0.09923173108499897 
+Training Epoch 7, Batch 160::: Total Loss:0.10214004642474725 

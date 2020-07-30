@@ -1,0 +1,23 @@
+USE_CUDA:  True
+Run ID : 06-29-20_1341
+Parameters used : 
+batch_size from file: 6
+lr: 0.0001
+model loaded from: /home/c3-0/praveen/VIRAT/trained_models/i3d_model_rgb_charades.pt
+Let's use 2 GPUs!
+Using ADAM optimizer
+walking : 2279
+standing : 331
+waving : 48
+long_arm : 758
+1319
+self statistics:  {0: 382, 1: 345, 2: 351, 3: 245, 4: 44}
+Number of training samples : 1319
+train ratio:  0.27742516682215085
+train dataloader:  330
+distribution:  {0: 382, 1: 345, 2: 351, 3: 245, 4: 44}
+total_data:  1275
+pos weights:  tensor([0.2103, 0.2329, 0.2289, 0.3279, 0.1000], dtype=torch.float64)
+neg weights:  tensor([0.2636, 0.2531, 0.2548, 0.2285, 0.1000], dtype=torch.float64)
+lr:  0.0001
+Training Epoch 0, Batch 0::: Total Loss:0.709686279296875 
