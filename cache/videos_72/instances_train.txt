@@ -1,0 +1,39 @@
+{'standing': 96, 'walking': 436, 'long_arm': 33, 'waving': 10, 'running': 7, 'digging': 1}
+total annotations:  583
+standing      880
+walking      3997
+long_arm      1055
+waving      31
+running      56
+digging      24
+
+
+{'standing': 96, 'walking': 436, 'long_arm': 33, 'waving': 10, 'digging': 1}
+total annotations:  576
+
+standing      880
+walking      3997
+long_arm      1055
+waving      59
+digging      47
+
+
+
+
+
+
+{'long_arm': 4, 'digging': 1, 'standing': 17, 'walking': 23, 'waving': 4}
+total annotations:  49
+long_arm      278
+digging      19
+standing      118
+walking      182
+waving      10
+
+long_arm      278
+digging      38
+standing      118
+walking      182
+waving      18
+
+

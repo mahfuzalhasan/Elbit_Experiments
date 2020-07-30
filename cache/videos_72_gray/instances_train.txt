@@ -1,0 +1,8 @@
+instance counter:  {'walking': 237, 'standing': 46, 'long_arm': 4, 'waving': 2, 'digging': 1}
+total annotations:  290
+
+walking      1718
+standing      549
+long_arm      297
+waving      11
+digging      47
